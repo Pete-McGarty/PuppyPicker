@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- build:css css/main.css -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../nucampsite/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="../nucampsite/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../nucampsite/node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="pupcss/pupstyles.css" />
+    <!-- endbuild -->
+
+    <!-- Links to Google fonts -->
+
+    
+    <title>Puppy Picker: Find the Perfect Pup For You</title>
+
+</head>
+<body>
+
+    <nav class="navbar-light mt-2 navbar-expand-md top">
+        
+        <span id="sideBarNavButton" class="d-md-none" onclick="openNav()">&#9776;</span>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Puppy Picker</a>
+            <a href="#">Dog Breeds</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><img src="pupimages/puppypickerlogo.png" height="40">
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Puppy Picker App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dog Breeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="pupimages/puppypickerlogo.png" class="float-left" height="100">
+            </div>
+            <div class="col-md-10">
+                 <h1>Puppy Picker</h1>
+                 <h3>Find the Perfect Pup for You</h3>
+            </div>
+        </div>
+        
+    </div>
+      
+      
+
+    
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins. -->
+    <!-- build:js js/main.js -->
+    <script src="../nucampsite/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../nucampsite/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../nucampsite/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="pupjs/pupjs.js"></script>
+    <!-- endbuild -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
+    
+ 
+</body>
+</html>
