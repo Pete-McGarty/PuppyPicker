@@ -10,21 +10,24 @@
     <!-- Additional CSS -->
     <link rel="stylesheet" href="../nucampsite/node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../nucampsite/node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="pupcss/pupstyles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/puppypickerlogo_mBA_icon.ico" type="image/x-icon">
     <!-- endbuild -->
 
     <!-- Links to Google fonts -->
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand|Open+Sans">
     
     <title>Puppy Picker: Find the Perfect Pup For You</title>
 
 </head>
+
 <body>
 
-    <nav class="navbar-light mt-2 navbar-expand-md top">
+    <nav class="mt-2 navbar-expand-md sticky-top">
         
         <span id="sideBarNavButton" class="d-md-none" onclick="openNav()">&#9776;</span>
-    
+        
+        <!-- Side Nav Button Show at XS & SM view -->
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">Home</a>
@@ -33,11 +36,12 @@
             <a href="#">About</a>
             <a href="#">Contact Us</a>
         </div>
-
+       
+        <!-- Top Navbar Collapse at medium viewpoints -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav navbar-right ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><img src="pupimages/puppypickerlogo.png" height="40">
+                    <a class="nav-link" href="#">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -57,18 +61,29 @@
         </div>
     </nav>
 
+    <!-- App logo/Brand Name/motto -->
     <div class="container-fluid mt-4">
         <div class="row">
-            <div class="col-md-2">
-                <img src="pupimages/puppypickerlogo.png" class="float-left" height="100">
+            <div class="col-md-2 my-auto">
+                <img src="images/puppypickerlogo.png" class="img-responsive" height="100">
             </div>
             <div class="col-md-10">
                  <h1>Puppy Picker</h1>
                  <h3>Find the Perfect Pup for You</h3>
             </div>
         </div>
-        
     </div>
+
+<!-- Background image carousel -->
+    <div class="slideshow">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+    </div>
+
+
       
       
 
@@ -80,7 +95,7 @@
     <script src="../nucampsite/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../nucampsite/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="pupjs/pupjs.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
     <script>
         function openNav() {

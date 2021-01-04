@@ -1,0 +1,136 @@
+body {
+    font-family: "Open Sans", sans-serif; 
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+h1, h2, h3 {
+    font-family: "Quicksand", sans-serif; 
+    color: #f3e9dd;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+ 
+/*  SIDE NAVBAR & NAV STYLES */
+    nav {
+        background-color: rgba(41, 136, 187, 0.5);
+    }
+
+    .nav-link {
+        color: rgba(243, 233, 221, 1);
+    }
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgb( 17, 17, 17);
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(243, 233, 221, 1);
+    display: block;
+    transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+
+    #sideBarNavButton {
+        font-size: 1.5em;
+        color: rgba(243, 233, 221, 1);
+        cursor: pointer;
+    }
+
+/* Slide/Carousel styles */
+.slideshow > figure  {
+    animation: imageAnimation 30s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -99;
+  }
+
+
+
+.slideshow > figure:nth-child(1) { 
+    background-image: url('../images/266697.jpg'); 
+}
+
+.slideshow > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('../images/266704.jpg');
+}
+
+.slideshow > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('../images/shibainu.jpg');
+}
+
+.slideshow > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('../images/4167221.jpg');
+}
+
+.slideshow > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('../images/4167234.jpg');
+}
+
+@keyframes 
+imageAnimation {  
+    0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    }
+    8% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    }
+    17% {
+    opacity: 1
+    }
+    25% {
+    opacity: 0
+    }
+    100% {
+    opacity: 0
+    }
+}
+
+  
